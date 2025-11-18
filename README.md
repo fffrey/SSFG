@@ -1,2 +1,8 @@
 # SSFG
+Abstractive dialogue summarization aims to generate concise textual summaries from multi-party conversations by capturing salient information. Existing studies typically employ graph construction methods to capture dynamic salient information in dialogues. However, these graph construction methods are typically decoupled from the summarization model. Consequently, they often struggle to capture global semantic dependencies, enable information interaction across heterogeneous graph structures, and maintain alignment between graph learning and model training objectives, potentially creating a disconnect between the learned graph representations and the final summary generation. In this paper, we propose a novel dialogue summarization model, the Semantic Structure Fusion Graph (SSFG), which aims to bridge this gap. SSFG integrates the dialogue's semantic structure with the summarization process, rather than treating them as two separate tasks. Specifically, we leverage prior knowledge and syntactic structures to guide the construction of multiple semantic graphs. We then employ two-dimensional convolution for an early-stage structural fusion that enables effective interaction across these diverse graph structures. Additionally, we introduce a gating mechanism that dynamically controls the fusion strategy during training, explicitly aligning the graph construction and learning stages. Extensive experiments conducted on three benchmark datasets—DialogSum, TODSum, and MediaSum-NPR—demonstrate that SSFG outperforms most existing baselines.
+# set up
+pip install transformers==4.8.2 \ py-rouge nltk numpy datasets stanza dgl
+# Training
+cd src && CUDA_VISIBLE_DEVICES=x python run.py
+# Future
 The code will be released after being organized.
