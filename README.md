@@ -3,6 +3,6 @@ Abstractive dialogue summarization aims to generate concise textual summaries fr
 # set up
 pip install transformers==4.8.2 \ py-rouge nltk numpy datasets stanza dgl
 # Training
-cd src && CUDA_VISIBLE_DEVICES=x python run.py
+CUDA_VISIBLE_DEVICES=x python run.py
 # Future
 The code will be released after being organized.
