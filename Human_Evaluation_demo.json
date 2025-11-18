@@ -1,0 +1,43 @@
+1.
+{"id": "test_0", 
+"utt": ["ms dawson i need you to take a dictation for me", "yes sir", "this should go out as an intra-office memorandum to all employees by this afternoon are you ready", "yes sir go ahead", "attention all staff effective immediately all office communications are restricted to email correspondence and official memos the use of instant message programs by employees during working hours is strictly prohibited", "sir does this apply to intra-office communications only or will it also restrict external communications", "it should apply to all communications not only in this office between employees but also any outside communications", "but sir many employees use instant messaging to communicate with their clients", "they will just have to change their communication methods i don't want any one using instant messaging in this office it wastes too much time now please continue with the memo where were we", "this applies to internal and external communications", "yes any employee who persists in using instant messaging will first receive a warning and be placed on probation at second offense the employee will face termination any questions regarding this new policy may be directed to department heads", "is that all", "yes please get this memo typed up and distributed to all employees before 4 pm"], 
+"unique_speaker": ["#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#"]}
+
+A: The use of Instant Messaging by employees during working hours is strictly prohibited. This applies to internal and external communications. Any employee who uses it will receive a warning and be placed on probation.
+
+B: #Person1# asks Ms. Dawson to take a dictation for him and tells her that the use of instant message programs by employees during working hours is strictly prohibited. The policy applies to internal and external communications and any employee who persists in using instant messaging will face termination.
+
+C: "Ms. Dawson helps #Person1# to write a memo to inform every employee that they have to change the communication method and should not use Instant Messaging anymore."
+
+2.
+{"id": "test_1", 
+"utt": ["you're finally here what took so long", "i got stuck in traffic again there was a terrible traffic jam near the carrefour intersection", "it's always rather congested down there during rush hour maybe you should try to find a different route to get home", "i don't think it can be avoided to be honest", "perhaps it would be better if you started taking public transport system to work", "i think it's something that i'll have to consider the public transport system is pretty good", "it would be better for the environment too", "i know i feel bad about how much my car is adding to the pollution problem in this city", "taking the subway would be a lot less stressful than driving as well", "the only problem is that i'm going to really miss having the freedom that you have with a car", "well when it's nicer outside you can start biking to work that will give you just as much freedom as your car usually provides", "that's true i could certainly use the exercise", "so are you going to quit driving to work then", "yes it's not good for me or for the environment"], 
+"unique_speaker": ["#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#"]}
+
+A: I got stuck in traffic jam near the Carrefour intersection. I will consider taking public transport system to get home. I feel bad about how much my car is adding to the pollution problem in this city. I'm going to start biking to work.
+
+B: #Person2# got stuck in traffic again. #Person1# suggests taking the public transport system to work to get home and thinks it would be better for the environment. Then they talk about the benefits of biking to work and decide to quit driving.
+
+C: "#Person2# arrives late because of traffic jam. #Person1# persuades #Person2# to use public transportations to keep healthy and to protect the environment."
+
+3.
+{"id": "test_2", 
+"utt": ["kate you never believe what's happened", "what do you mean", "masha and hero are getting divorced", "you are kidding what happened", "well i don't really know but i heard that they are having a separation for 2 months and filed for divorce", "that's really surprising i always thought they are well matched what about the kids who get custody", "masha it seems quiet and makable no quarrelling about who get the house and stock and then contesting the divorce with other details worked out", "that's the change from all the back stepping we usually hear about well i still can't believe it masha and hero the perfect couple when would they divorce be final", "early in the new year i guess"], 
+"unique_speaker": ["#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#", "#Person2#", "#Person1#"]}
+
+A: Masha and Hero are getting a divorce. They have been separated for 2 months and filed for divorce. The divorce will be final early in the New Year.
+
+B: #Person1# tells Kate that Masha and Hero are getting divorced. Kate is surprised and still can't believe it.
+
+C: "#Person1# tells Kate that Masha and Hero get divorced. Kate is surprised because she thought they are perfect couple."
+
+case_id	summary	Relevance_1	Consistency_1	Fluency_1	Coherence_1	Relevance_2	Consistency_2	Fluency_2	Coherence_2	Relevance_3	Consistency_3	Fluency_3	Coherence_3
+test_0	A	4	4	5	5	3	4	5	5	4	3	5	5
+test_0	B	4	3	5	5	4	4	5	5	3	2	5	4
+test_0	C	3	5	4	4	2	4	5	5	3	4	5	5
+test_1	A	4	4	4	5	3	4	5	5	3	3	5	4
+test_1	B	5	5	4	5	4	5	5	5	4	3	4	5
+test_1	C	4	4	4	4	2	4	5	5	3	3	5	4
+test_2	A	4	5	5	5	3	5	5	5	5	5	5	5
+test_2	B	3	5	5	5	2	5	5	5	2	4	5	4
+test_2	C	4	5	4	5	2	4	5	5	2	3	5	4
